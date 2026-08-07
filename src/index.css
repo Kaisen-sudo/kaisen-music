@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles globaux pour le glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.dark .glass {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Arrière-plans thématiques */
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-attachment: fixed;
+  color: white;
+}
+
+.dark body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+
+.light body {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  color: #1a1a2e;
+}
+
+/* Transitions douces */
+* {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
