@@ -7,8 +7,8 @@ async function request(endpoint, options = {}) {
 }
 
 export const api = {
-  getTrending: (genre) => request(`/music/${genre || ''}trending`),
-  getRecent: (genre) => request(`/music/${genre || ''}recent`),
+  getTrending: (genre) => request(`/music/${genre ? genre + '/' : ''}trending`),
+  getRecent: (genre) => request(`/music/${genre ? genre + '/' : ''}recent`),
   getCharts: (type, period) => request(`/chart/${type}/${period}`),
   search: (query, type, page = 1, limit = 20) =>
     request(`/search?q=${query}&show=${type || 'music'}&page=${page}&limit=${limit}`),
