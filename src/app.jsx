@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import HomePage from './pages/HomePage';
-import ChartsPage from './pages/ChartsPage';
-import SearchPage from './pages/SearchPage';
-import ArtistPage from './pages/ArtistPage';
-import MusicDetailPage from './pages/MusicDetailPage';
-import PlaylistDetailPage from './pages/PlaylistDetailPage';
-import UserPage from './pages/UserPage';
+import Layout from './components/Layout.jsx';
+import HomePage from './pages/HomePage.jsx';
+import ChartsPage from './pages/ChartsPage.jsx';
+import SearchPage from './pages/SearchPage.jsx';
+import ArtistPage from './pages/ArtistPage.jsx';
+import MusicDetailPage from './pages/MusicDetailPage.jsx';
+import PlaylistDetailPage from './pages/PlaylistDetailPage.jsx';
+import UserPage from './pages/UserPage.jsx';
 
 function App() {
   return (
